@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mia calcolatrice in JS</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+
+    
+    <div id="parent">
+        <div id="child">
+            <div class="content">
+                <input type="text" name="display" id="risultati" readonly="readonly" class="display" placeholder="00">
+            </div>
+            <div class="content">
+                <div class="content">
+                    <button type="button" id="7" onclick="n(this.id)" class="tasto">7</button>
+                    <button type="button" id="8" onclick="n(this.id)" class="tasto">8</button>
+                    <button type="button" id="9" onclick="n(this.id)" class="tasto">9</button>
+                    <button type="button" id="/" onclick="n(this.id)" class="key">/</button>
+                </div>
+                <div class="content">
+                    <button type="button" id="4" onclick="n(this.id)" class="tasto">4</button>
+                    <button type="button" id="5" onclick="n(this.id)" class="tasto">5</button>
+                    <button type="button" id="6" onclick="n(this.id)" class="tasto">6</button>
+                    <button type="button" id="*" onclick="n(this.id)" class="key">*</button>
+                </div>
+                <div class="content">
+                    <button type="button" id="1" onclick="n(this.id)" class="tasto">1</button>
+                    <button type="button" id="2" onclick="n(this.id)" class="tasto">2</button>
+                    <button type="button" id="3" onclick="n(this.id)" class="tasto">3</button>
+                    <button type="button" id="-" onclick="n(this.id)" class="key">-</button>
+                </div>
+                <div class="content">
+                    <button type="button" onclick="cancella()" class="tasto">C</button>
+                    <button type="button" id="0" onclick="n(this.id)" class="tasto">0</button>
+                    <button type="button" id="." onclick="n(this.id)" class="key1">.</button>
+                    <button type="button" id="+" onclick="n(this.id)" class="key1">+</button>
+                </div>
+                <div class="content">
+                    <button onclick="operazione()" class="uguale">=</button>
+                    <button type="button" id="&percnt;" onclick="n(this.id)" class="key1">%</button>
+                    <button type="button" id="**" onclick="n(this.id)" class="key1">**</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/JS/script.js"></script>
+</body>
+
+</html>
